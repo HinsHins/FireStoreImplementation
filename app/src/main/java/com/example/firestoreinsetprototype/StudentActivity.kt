@@ -49,6 +49,8 @@ class StudentActivity : AppCompatActivity() {
                     "Please fill all fields before insert",
                     Toast.LENGTH_SHORT
                 ).show()
+
+            clearView()
         }
 
         val studentRef = fb.collection("students")
@@ -68,12 +70,24 @@ class StudentActivity : AppCompatActivity() {
             }
     }
 
+    private fun clearView() {
+        sid_et.text.clear()
+        sname_et.text.clear()
+        semail_et.text.clear()
+        sprogramme_et.text.clear()
+        scountry_et.text.clear()
+    }
+
     private fun presentDeleteAlert(student: Student) {
         val dialog = AlertDialog.Builder(this)
-        dialog.setCancelable(true).setMessage("Are you sure you want to delete this Student? ${student.id}")
-            .setPositiveButton("Yes",DialogInterface.OnClickListener { dialogInterface, i ->
+        dialog.setCancelable(true).setMessage("Are you sure you want to delete this Student? \nStudent ID: ${student.id} \nStudent Name: ${student.name}")
+            .setNegativeButton("Yes",DialogInterface.OnClickListener { dialogInterface, i ->
                 deleteStudent(student)
             })
+            .setPositiveButton("No",DialogInterface.OnClickListener { dialogInterface, i ->
+                dialogInterface.cancel()
+            })
+        dialog.show()
 
     }
 

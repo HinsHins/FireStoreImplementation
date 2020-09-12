@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "984178366794",
+    "firebase_url": "https://firestoreinsertprototype.firebaseio.com",
+    "project_id": "firestoreinsertprototype",
+    "storage_bucket": "firestoreinsertprototype.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:984178366794:android:46e78a563aed9a957b49b3",
+        "android_client_info": {
+          "package_name": "com.example.firestoreinsetprototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "984178366794-q7cjpnf1pkdd5ttcc159k7k6g8i3722p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAVvTccUacQNhPP4eeYf2aBg3EkNYp5R4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "984178366794-q7cjpnf1pkdd5ttcc159k7k6g8i3722p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
